@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*-- 底部菜单按钮 --*/
+
+        #slide_btn {
+            width: 100%;
+            height: 49px;
+            background: #FFFFFF;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 999;
+            border-top: 1px solid #eee;
+            padding-top: 6.5px;
+            padding-bottom: 5px;
+            box-sizing: border-box;
+        }
+
+        #slide_btn .flex_layout {
+            display: flex;
+            display: -webkit-flex;
+            justify-content: space-around;
+            -webkit-align-items: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        #slide_btn .flex_layout>div {
+            height: 30px;
+            text-align: center;
+        }
+
+        #slide_btn .flex_layout img {
+            width: 17px;
+            height: 17px;
+        }
+
+        #slide_btn .flex_layout p {
+            height: 11.5px;
+            line-height: 11.5px;
+            font-size: 12px;
+            color: #666
+        }
+
+        .getMoreData_btn {
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            text-align: center
+        }
+
+        #slide_btn .plusSign_btn img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .mt-10 {
+            margin-top: 0px
+        }
+
+        .blue {
+            color: #4A77B0 !important;
+        }
+    </style>
+</head>
+
+<body>
+    子页面
+    <!-- 底部菜单栏按钮 -->
+    <div id="slide_btn">
+        <div class="flex_layout">
+            <div class="grabSheet_btn">
+                <img src="images/grabSheet.png" />
+                <p class="mt-10">抢单</p>
+            </div>
+            <div class="documentary_btn">
+                <img src="images/documentary.png" />
+                <p class="mt-10">跟单</p>
+            </div>
+            <div class="plusSign_btn">
+                <img src="images/plus_img.png" />
+            </div>
+            <div class="recruiting_btn">
+                <img src="images/recruiting.png" />
+                <p class="mt-10">职位</p>
+            </div>
+            <div class="my_btn">
+                <img src="images/user.png" />
+                <p class="mt-10">我的</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            // 取出localstorage中选中的底部按钮并点亮
+            var storage = window.localStorage;
+            var allBtnTxtDom = $('#slide_btn .flex_layout p');
+            for(var i = 0, len = allBtnTxtDom.length; i < len; i++){
+                if(allBtnTxtDom[i].innerHTML == storage.getItem('choicedBtn')){
+                   allBtnTxtDom[i].classList.add('blue');
+                   var imgAttrChecked = allBtnTxtDom[i].previousElementSibling.getAttribute('src');
+                   var lastTargetStr = imgAttrChecked.substring(imgAttrChecked.length - 4);
+                   var NowImgPath = imgAttrChecked.replace(lastTargetStr,'_checked.png');
+                   allBtnTxtDom[i].previousElementSibling.setAttribute('src',NowImgPath);
+                }                
+            }
+        })
+    </script>
+</body>
+
+</html>
