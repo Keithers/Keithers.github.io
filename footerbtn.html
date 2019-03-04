@@ -83,11 +83,11 @@
     <!-- 底部菜单栏按钮 -->
     <div id="slide_btn">
         <div class="flex_layout">
-            <div class="grabSheet_btn">
-                <a href="footerbtn-second.html">
+            <div class="grabSheet_btn" id="firstBtn">
+                
                     <img src="images/grabSheet_checked.png" />
                     <p class="mt-10 blue">抢单</p>
-                </a>
+                
             </div>
             <div class="documentary_btn">
                 <a href="底部菜单切换1.html">
@@ -122,6 +122,10 @@
             var footChoicedBtnTxt = $(this).find('p').html();
             storage.setItem('choicedBtn', footChoicedBtnTxt);
         })
+
+        document.getElementById('firstBtn').onclick = function (){
+        	window.location.href="footerbtn-second.html"
+        }
     </script>
 </body>
 
