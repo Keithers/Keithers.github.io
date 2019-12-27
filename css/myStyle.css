@@ -167,3 +167,11 @@ i.i_top {
 .wrap:hover .bottom {
     transform: rotateX(270deg) translateZ(100px) translateY(100px);
 }
+
+.audioDom{
+    width: 119px;
+    border: 0;
+    position: absolute;
+    top: 29px;
+    right: -14px;
+}
