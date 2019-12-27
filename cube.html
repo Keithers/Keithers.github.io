@@ -5,14 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>立体相册集</title>        
-    <link rel="stylesheet" type="text/css" href="css/myStyle.css" />  
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/myStyle.css" />
 </head>
 
 <body>
     <div class="htmleaf-container">
-        <audio autoplay="autoplay" controls="controls" loop="loop" preload="auto" id="audioDom"
-            src="audio/bridgeGirl.m4a"></audio>
         <div align="center" style="direction: ltr;">
             <div class="wrap">
                 <div class="cube">
@@ -44,15 +42,9 @@
             </div>
         </div>
     </div>
-    <script src="js/jquery.min.js"></script>
-    <script>
-        $(function () {            
-            let uploadMusic = $("#audioDom");
-            if (uploadMusic.paused) {
-                uploadMusic.play();
-            }
-        })
-    </script>
 </body>
+<!-- <audio autoplay="autoplay" muted controls="controls" loop="loop" preload="auto" id="audioDom"
+    src=""></audio> -->
+<iframe src="audio/bridgeGirl.m4a" allow="autoplay" style="display:none;"></iframe>
 
 </html>
