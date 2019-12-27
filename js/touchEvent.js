@@ -1,5 +1,5 @@
 var tsFlag = true;
-$('.htmleaf-container').bind('click touchstart', function () {
+$('html').bind('click touchstart', function () {
     if (tsFlag) {
         alert(1)       
         $('.front').css('transform', 'translateZ(200px)');
