@@ -11,7 +11,12 @@ $('.front,.back,.right,.left,.top,.bottom').bind('click touchstart', function ()
         tsFlag = false;
     } else {   
         alert(2)     
-        $('.front,.back,.right,.left,.top,.bottom').removeAttr('style')
+        $('.front').removeAttr('style');        
+        $('.back').removeAttr('style');
+        $('.right').removeAttr('style');
+        $('.left').removeAttr('style');
+        $('.top').removeAttr('style');
+        $('.bottom').removeAttr('style');
         tsFlag = true;
     }
 })
