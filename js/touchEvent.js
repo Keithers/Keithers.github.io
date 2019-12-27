@@ -1,5 +1,5 @@
 var tsFlag = true;
-$('.front,.back,.right,.left,.top,.bottom').bind('click touchstart', function () {
+$('.htmleaf-container').bind('click touchstart', function () {
     if (tsFlag) {
         alert(1)       
         $('.front').css('transform', 'translateZ(200px)');
@@ -11,14 +11,13 @@ $('.front,.back,.right,.left,.top,.bottom').bind('click touchstart', function ()
         alert($(this)[0].outerHTML)       
         tsFlag = false;
     } else {   
-        alert(2) 
-        $(this).removeAttr('style');    
-        // $('.front').removeAttr('style');        
-        // $('.back').removeAttr('style');
-        // $('.right').removeAttr('style');
-        // $('.left').removeAttr('style');
-        // $('.top').removeAttr('style');
-        // $('.bottom').removeAttr('style');
+        alert(2)        
+        $('.front').removeAttr('style');        
+        $('.back').removeAttr('style');
+        $('.right').removeAttr('style');
+        $('.left').removeAttr('style');
+        $('.top').removeAttr('style');
+        $('.bottom').removeAttr('style');
         alert($(this)[0].outerHTML)
         tsFlag = true;
     }
