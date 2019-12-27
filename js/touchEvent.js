@@ -1,5 +1,5 @@
 var tsFlag = true;
-$('.wrap').bind('touchstart', function () {
+$('.front,.back,.right,.left,.top,.bottom').bind('touchstart', function () {
     if (tsFlag) {       
         $('.front').css('transform', 'translateZ(200px)');
         $('.back').css('transform', 'translateZ(-200px) rotateY(180deg)');
@@ -12,5 +12,4 @@ $('.wrap').bind('touchstart', function () {
         $('.front,.back,.right,.left,.top,.bottom').removeAttr('style')
         tsFlag = true;
     }
-
 })
