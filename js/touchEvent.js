@@ -1,5 +1,5 @@
 var tsFlag = true;
-$('html').bind('click touchstart', function () {
+$('html').bind('click', function () {
     if (tsFlag) {              
         $('.front').css('transform', 'translateZ(200px)');
         $('.back').css('transform', 'translateZ(-200px) rotateY(180deg)');
