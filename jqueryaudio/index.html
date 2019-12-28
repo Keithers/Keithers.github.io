@@ -1,1 +1,77 @@
-<!DOCTYPE html> <html lang="ch"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> <meta http-equiv="X-UA-Compatible" content="ie=edge"> <title>HTML5audio插件</title> <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"> </script> <link rel="stylesheet" href="css/PsAudio.css?version=19.5.18"> <script type="text/javascript" src="JavaScript/PsAudio.js?version=19.5.18"></script> <style> *{ border: none; margin: 0; padding: 0; font-family: 微软雅黑; } ul, ol{ list-style: none; } html, body{ height: 100%; width: 100%; } a{ text-decoration: none; } #audio{ margin: auto; } </style> </head> <body> <div id="audio"></div> <script> // audioSrcFile,audioHttp,audioSrc,audioLic,addAuto必须传,audioBg,audioListBg可不传该属性 // audioHttp为歌曲外链方式，如果是外链方式请传入对应歌曲的链接地址,如果是本地请不要传该属性 // audioSrcFile是本地歌曲和图片的文件夹名，请确保该文件夹与index.html文件为同级目录，如果不是 // 请传入相对与index.html的目录 // audioSrc是歌曲名字，请按歌手-歌曲名命名，本地也是一样，确保歌曲和图片能正确加载 // audioLic为歌词，请保持下列歌词相同格式,如果都没有歌词请传入空数组，如果单独某首歌没有歌 // 词，请在歌曲对应位置传入空字符串 // audioBg为播放器背景 audioListBg为播放列表颜色 // 其他的需要修改的颜色可以自行研究PsAudio.css文件进行修改 // addAuto为添加音乐时是否直接播放音乐，如果添加多首歌则播放最后一首，false为不播放 // PS.......  添加音乐为ajax请求，谷歌本地打开会报错，json格式在addsong.json中，且与js文件同级目录 // 如果要改变其位置，请在PsAudio第358行改变其url地址 // json中title为歌手加歌名，命名与audioSrc一样，src为歌词，没有请传入空数组,audioHttp为外链专用 // 不是外链不要传 //不需要添加歌曲请在css中将按钮隐藏即可，其css样式为addSonBtn // 外链方式，传入audioHttp属性，对应歌曲的链接 psAudio({ audioSrcFile: 'soures', audioSrc: ['张茜-桥边姑娘'], audioHttp: ['http://keithers.github.io/audio/bridgeGirl.m4a'], audioBg: '', audioListBg: '', addAuto: true }); // 本地方式，不传外链属性,但是本地歌曲的命名需与audioSrc里的一致即歌手-歌名 // psAudio({ //     audioSrcFile: '../audio/bridgeGirl.m4a', //     audioSrc: ['张茜-桥边姑娘'], //     audioBg: '', //     audioListBg: '', //     addAuto: true // }) </script> </body> </html>
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML5audio插件</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"> </script>
+    <link rel="stylesheet" href="css/PsAudio.css?version=19.5.18">
+    <script type="text/javascript" src="JavaScript/PsAudio.js?version=19.5.18"></script>
+    <style>
+        * {
+            border: none;
+            margin: 0;
+            padding: 0;
+            font-family: 微软雅黑;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #audio {
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="audio"></div>
+    <script>
+        // audioSrcFile,audioHttp,audioSrc,audioLic,addAuto必须传,audioBg,audioListBg可不传该属性 
+        // audioHttp为歌曲外链方式，如果是外链方式请传入对应歌曲的链接地址,如果是本地请不要传该属性 
+        // audioSrcFile是本地歌曲和图片的文件夹名，请确保该文件夹与index.html文件为同级目录，如果不是 
+        // 请传入相对与index.html的目录 // audioSrc是歌曲名字，请按歌手-歌曲名命名，本地也是一样，确保歌曲和图片能正确加载 
+        // audioLic为歌词，请保持下列歌词相同格式,如果都没有歌词请传入空数组，如果单独某首歌没有歌 
+        // 词，请在歌曲对应位置传入空字符串 // audioBg为播放器背景 audioListBg为播放列表颜色 
+        // 其他的需要修改的颜色可以自行研究PsAudio.css文件进行修改 
+        // addAuto为添加音乐时是否直接播放音乐，如果添加多首歌则播放最后一首，false为不播放 
+        // PS.......  添加音乐为ajax请求，谷歌本地打开会报错，json格式在addsong.json中，且与js文件同级目录 
+        // 如果要改变其位置，请在PsAudio第358行改变其url地址 
+        // json中title为歌手加歌名，命名与audioSrc一样，src为歌词，没有请传入空数组,audioHttp为外链专用 
+        // 不是外链不要传 //不需要添加歌曲请在css中将按钮隐藏即可，其css样式为addSonBtn 
+        // 外链方式，传入audioHttp属性，对应歌曲的链接 
+        psAudio({
+            audioSrcFile: 'soures',
+            audioSrc: ['张茜-桥边姑娘'],
+            audioHttp: ['http://keithers.github.io/audio/bridgeGirl.m4a'],
+            audioBg: '',
+            audioListBg: '',
+            addAuto: true
+        });
+            // 本地方式，不传外链属性,但是本地歌曲的命名需与audioSrc里的一致即歌手-歌名
+            // psAudio({ 
+                //     audioSrcFile: '../audio/bridgeGirl.m4a', 
+                //     audioSrc: ['张茜-桥边姑娘'], 
+                //     audioBg: '', 
+                //     audioListBg: '', 
+                //     addAuto: true 
+                // }) 
+    </script>
+</body>
+
+</html>
