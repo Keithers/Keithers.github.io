@@ -8,13 +8,8 @@ $('html').bind('click', function () {
         $('.top').css('transform', 'rotateX(-270deg) translateZ(100px) translateY(-100px)');
         $('.bottom').css('transform', 'rotateX(270deg) translateZ(100px) translateY(100px)');               
         tsFlag = false;
-    } else {           
-        $('.front').removeAttr('style');        
-        $('.back').removeAttr('style');
-        $('.right').removeAttr('style');
-        $('.left').removeAttr('style');
-        $('.top').removeAttr('style');
-        $('.bottom').removeAttr('style');        
+    } else {                   
+        $('.front,.back,.right,.left,.top,.bottom').removeAttr('style');        
         tsFlag = true;
     }
 })
