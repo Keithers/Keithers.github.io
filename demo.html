@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .elevator {
+      position: fixed;
+      padding: 0 16px;
+      top: 55%;
+      margin-top: -140px;
+      right: 0;
+      z-index: 9;
+      background-color: #fff;
+      box-shadow: -2px 2px 5px 3px rgba(7, 17, 27, .1);
+    }
+
+    .elevator a {
+      display: block;
+      width: 26px;
+      padding: 16px 0;
+      font-size: 22px;
+      line-height: 20px;
+      color: #b5b9bc;
+      box-sizing: border-box;
+      text-align: center;
+      border-bottom: 1px solid #edf1f2;
+    }
+
+    .elevator .elevator-app:hover .elevator-app-box {
+      display: block;
+      visibility: visible;
+      opacity: 1;
+      max-width: none;
+      /* -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1); */
+    }
+
+    .elevator .elevator-app-box {
+      position: absolute;
+      width: 172px;
+      height: 212px;
+      bottom: -2px;
+      right: 172px;
+      -webkit-transition: opacity .25s, transform .3s;
+      -moz-transition: opacity .25s, transform .3s;
+      transition: opacity .25s, transform .3s;
+      opacity: 0;
+      max-width: 0;
+      /* -webkit-transform: scale(.01);
+      -ms-transform: scale(.01);
+      transform: scale(.01); */
+      /* -webkit-transform-origin: 100% 95%;
+      -ms-transform-origin: 100% 95%;
+      transform-origin: 100% 95%; */
+      background: url(https://static.mukewang.com/static/img/common/elevator.png?t=0705) no-repeat 0 -220px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="J_GotoTop" class="elevator">
+    
+    <a href="//www.imooc.com/mobile/app" target="_blank" class="elevator-app">
+      <i class="sz-appdownload"></i>
+      <span class="">APP下载</span>
+      <div class="elevator-app-box"></div>
+    </a>
+   
+  </div>
+</body>
+
+</html>
