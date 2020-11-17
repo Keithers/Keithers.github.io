@@ -1,0 +1,40 @@
+/* 底部蒙层 */
+    #topCover {
+  width: 100%;
+  height:.8rem;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+  overflow:hidden;
+  position: relative;
+}
+#topCover .left {
+    width: 0.45rem;
+    height: 100%;
+    position:absolute;
+    z-index:99;
+}
+#topCover .close {
+  position:absolute;
+  width: 0.27rem;
+  left: 5px;
+  top:.27rem;
+}
+.right{
+	width:100%;  
+  	height:100%;
+  	float:none;
+}
+#topCover .bg{
+  width:100%;  
+  height:100%;
+}
+#rightCover {	
+    position: absolute;
+    left:0.45rem;
+    right:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    
+}
