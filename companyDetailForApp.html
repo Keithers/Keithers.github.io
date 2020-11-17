@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title></title>
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<meta content="telephone=no" name="format-detection">
+	<link rel="stylesheet" type="text/css" href="./static/app/css/main.css">
+	<link rel="stylesheet" type="text/css" href="./static/app/css/style.css">
+	<link rel="stylesheet" type="text/css" href="./static/app/css/comDetailApp.css?v=2019040201">
+
+</head>
+
+<body>
+	<!--遮罩层-->
+	<div class="tui-mask hide"></div>
+	<!--/遮罩层-->
+	<!--认证-->
+	<div class="footer-box certify-box">
+		<!--认证标准-->
+		<div class="block-each bdb0">
+			<h2 class="block-title">认证标准</h2>
+			<p class="c333">该企业已经过优蓝网官方认证，优蓝网确保以下信息真实可靠</p>
+			<ul class="standards">
+				<li>该企业与优蓝网已签署官方委托协议</li>
+				<li>优蓝网已派专人严格审核企业岗位</li>
+				<li>优蓝网已派专属服务人员进厂入住接待</li>
+			</ul>
+		</div>
+		<!--/认证标准-->
+		<!--专享服务-->
+		<div class="block-each bdb0">
+			<h2 class="block-title">专享服务</h2>
+			<div class="block-con">
+				<ul class="specialService clearfix">
+					<li>
+						<div class="circle circle1">
+							<p>全程</p>
+							<p>0费用</p>
+						</div>
+						<p>参加面试入职</p>
+						<p>全程无任何费用</p>
+					</li>
+					<li>
+						<div class="circle circle2">
+							<p>专属</p>
+							<p>服务</p>
+						</div>
+						<p>匹配专属顾问</p>
+						<p>一对一贴心服务</p>
+					</li>
+					<li>
+						<div class="circle circle3">
+							<p>全流程</p>
+							<p>覆盖</p>
+						</div>
+						<p>从报名到入职</p>
+						<p>全流程跟踪服务</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--/专享服务-->
+		<div class="close-div close-btn">关闭</div>
+	</div>
+	<!--artjs渲染模板-->
+	<script type="text/template" id="con_m">
+
+    <div class="page-wrapper">
+        <div class="company-info">
+            <div class="comp-scene">
+        <%if($data.companySceneList.length==0){%> 
+			<figcaption class="fig" style="background-image: url(./static/m/images/app/default_enterprise_cover_image.png)"></figcaption>
+		<%}else{%>
+			<figcaption class="fig" style="background-image: url(<%=$data.companySceneList[0].imagpath%>)"></figcaption>
+		<%}%>														
+                <div class="img-bg">
+                    <p class="name"><span><%=$data.companyInfo.name%></span></p>
+                    <a id="a_album" href="javascript:void(0)">
+                        <p class="img-num"><i class="icon-img"></i><%=$data.companySceneList.length%>张</p>
+                    </a>
+                </div>
+               
+            </div>
+            <a href="javascript:void(0);">
+                <%if($data.companyInfo.labels==""){%>
+                <div class="comment">
+                    <p class="item-stars">
+    			<span class="stars">
+    				<!-- 默认3.5星 -->
+                        <i class="star one"></i>
+                        <i class="star two"></i>
+                        <i class="star three"></i>
+                        <i class="star four"></i>
+                        <i class="star five"></i>
+
+    				<span class="yellow">很好</span>
+    			</span>
+                    </p>
+					
+                    <div class="link flex" id="a1_comment">
+						<p><span><%=$data.companyInfo.enterpriseCommentCount%></span>条评论</p>
+						<img src="./static/app/images/arrRight.png">
+					</div>
+                    <%if($data.companyInfo.labels==""){%>
+
+                    <%}else{%>
+                    <div class="comment_one">
+                        <%for(var i=0;i<3;i++){%>
+							<%if($data.companyInfo.labels[i] != null && $data.companyInfo.labels[i] != ''){%>
+                        		<span><%=$data.companyInfo.labels[i]%></span>
+                        	<%}%>
+                        <%}%>
+                    </div>
+                    <%}%>
+                </div>
+                <%}else{%>
+                <div class="comment" >
+                    <p class="item-stars">
+    			<span class="stars">
+    				<!-- 默认3.5星 -->
+                        <i class="star one"></i>
+                        <i class="star two"></i>
+                        <i class="star three"></i>
+                        <i class="star four"></i>
+                        <i class="star five"></i>
+    				<span class="yellow">很好</span>
+    			</span>
+                    </p>
+                    <div class="link flex" id="a1_comment">
+						<p><span><%=$data.companyInfo.enterpriseCommentCount%></span>条评论</p>
+						<img src="./static/app/images/arrRight.png">
+					</div>
+                    <%if($data.companyInfo.labels==""){%>
+
+                    <%}else{%>
+                    <!--<div class="comment_one">
+                        <%for(var i=0;i<3;i++){%>
+							<%if($data.companyInfo.labels[i] != null && $data.companyInfo.labels[i] != ''){%>
+                        		<span><%=$data.companyInfo.labels[i]%></span>
+                        	<%}%>
+                        <%}%>
+                    </div>-->
+                    <%}%>
+                </div>
+                <%}%>
+            </a>
+            <!--地址-->
+            <div class="location">
+                <div class="box-g-w box-g-w-sty" style="padding: 10px 0px !important;">
+                    <a id="link_jump_map" href="javascript:void(0);" class="a-green">
+                        <p class="area-sty relative">
+                            <img src="./static/app/images/goTo.png">
+                            <span id="map"><%=$data.companyInfo.address%></span>
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <!--/地址-->
+            <!--锚点-->
+            <div class="am-sticky-placeholder" style="height: 45px; margin: 0px;"><div class="am-sticky-placeholder" style="height: 46px;"><ul class="anchors clearfix am-sticky" data-am-scrollspynav="{offsetTop: 45}" data-am-sticky="" style="margin: 0px; top: 0px; left: 0px; width: 100%;">
+                <li><a class="am-active" href="#achor-job">岗位</a></li>
+                <li><a href="#dian_ping" class="">点评问答</a></li>
+                <li><a href="#achor-consult" class="">企业简介</a></li>
+            </ul></div></div>
+            <!--/锚点-->
+            <!--/锚点-->
+            <div class="divider"></div>
+            <!--在招岗位-->
+            <div class="title-g bg-white"   id="achor-job"><label class="c333">在招岗位</label></div>
+            <div class="job-list-sty" id="job-item-container">
+                <%for(var i=0;i<$data.jobList.length;i++){%>
+                <ul class="item"  data-city="<%=$data.jobList[i].cityId%>"  data-job="<%=$data.jobList[i].jobId%>">
+                    <li class="name over"><%=$data.jobList[i].title%>
+                    <li class="salary over yellow job-item job-item-salary" data-id="501663">
+                        <%=$data.jobList[i].salaryStr%>
+						<%if($data.jobList[i].salaryType == null || $data.jobList[i].salaryType == ''){%>
+								薪资面议
+                    	<%}%>
+						<%if($data.jobList[i].salaryType == 2){%>
+								元/月
+                    	<%}%>
+						<%if($data.jobList[i].salaryType == 4){%>
+								元/天
+                    	<%}%>
+						<%if($data.jobList[i].salaryType == 5){%>
+								元/小时
+                    	<%}%>                        
+                    </li>
+                    <li class="welfare flex" >
+						<%if($data.jobList[i].jobLabel!=null&&$data.jobList[i].jobLabel!=''){%>
+                        	<%for(var j=0;j<3;j++){ %>
+                       			<%if($data.jobList[i].jobLabel[j]!=null&&$data.jobList[i].jobLabel[j]!=''){%>
+                        			<span class="mr5 over"><%=$data.jobList[i].jobLabel[j]%></span>
+                        		<%}else{%><%}%>
+                        	<%}%>
+                        <%}else{%>
+							<span class="mr5">待遇好</span>
+						<%}%>						
+                    </li>
+					<%if($data.jobList[i].rewardPrice != null && $data.jobList[i].rewardPrice != ''){%>
+					<div class="box_sub">
+						<p class="subsidy1"><%=$data.jobList[i].rewardPrice%></p>
+					</div>
+					<%}%>
+					<a href="javascript:;" class="btn-yellow signup" data-id="501663">报名</a>
+                </ul>
+                <%}%>
+            </div>
+            <div class="divider"></div>
+            <!--面试点评-->
+            <div class="title-g bg-white" id="dian_ping" >
+				<label class="c333">用户点评
+					<%if($data.companyInfo.enterpriseCommentCount == null && $data.companyInfo.enterpriseCommentCount ==''){%>
+						(0)
+					<%}else{%>
+						(<%=$data.companyInfo.enterpriseCommentCount%>)
+					<%}%>
+				</label>
+				<a href='javascript:void(0);' class='getGold' >点评领金币</a>
+			</div>
+            <div class="comment_first">
+                <div class="comment_m"></div>
+                <div class="text-center">
+					<a href="javascript:void(0)" id="lookCompanyAll" class="view-more  bdb0" style="color:#a0a0a0">
+						全部点评 <time style="color:#43ccc0">
+						<%if($data.companyInfo.enterpriseCommentCount != null && $data.companyInfo.enterpriseCommentCount != ''){%>
+							<%=$data.companyInfo.enterpriseCommentCount%>
+						<%}else{%>
+							0
+						<%}%>
+						</time> 条
+					</a>
+				</div>
+            </div>
+            <!--/活-->
+            <div class="divider"></div>
+            <!--企业问答-->
+            <div class="title-g bg-white"  id="achor-consult">
+				<%if($data.communityTalkCount != null && $data.communityTalkCount != "" && $data.communityTalkCount>0){%>
+					<label class="c333">问大家(<%=$data.communityTalkCount%>)</label>
+					<a href='javascript:void(0);' class='getGold' id="askAndGetIntegral">提问领金币</a>
+					<%for(var i=0;i<$data.UserCommunityTalkList.items.length;i++){%>
+                		<div class="p_mo"><span>问</span><p class='over'><%=$data.UserCommunityTalkList.items[i].title%></p></div>
+                	<%}%>
+				<%}else{%>
+					<label class="c333">问大家</label>
+					<a href='javascript:void(0);' class='getGold' id="askAndGetIntegral">提问领金币</a>		
+				<%}%>
+            </div>
+            <div class="text-center"><a href="javascript:void(0)" class="view-more  bdb0" id="lookAll" style="color:#a0a0a0">全部问答 <time style="color:#43ccc0">
+			<%if($data.communityTalkCount == null || $data.communityTalkCount == ''){%>
+				0
+			<%}else{%>
+				<%=$data.communityTalkCount%>
+			<%}%>
+			</time>条</a></div>
+            <div class="divider"></div>
+            <!--企业简介-->
+            <div class="title-g bg-white" ><label class="c333">企业简介</label></div>
+            <div class="comp-introduce">
+                <ul>
+                    <li>行业：<%=$data.companyInfo.industry%></li>
+                    <li>别名：<%=$data.companyInfo.abbreviation%></li>
+                    <li>电话：<span  id="tel_contact_phone" data-num="<%=$data.companyInfo.contactPhone%>"><%=$data.companyInfo.contactPhone%></span></li>
+                    <li class="text">
+                        <p class="text-over">
+                            <span class="text"><%-$data.companyInfo.introduction%> </span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <!--/企业简介-->
+            <a id="a_feedback" href="javascript:void(0)">
+				<div class="correction">企业反馈</div>
+			</a>
+        </div>
+        <!--/company-info-->
+    </div>
+</script>
+	<script src="./static/app/js/zepto.min.js"></script>
+	<script src="./static/app/js/art-template.js"></script>
+	<script src="./static/app/js/common.js"></script>
+	<script src="./static/app/js/jquery.1.8.3.js"></script>
+	<script src="./static/app/js/app-common.js"></script>
+	<script src="./static/app/js/lab.js"></script>
+	<script src="./static/m/js/flex-100.js"></script>
+	<script src="./static/url.js?v=2019040301"></script>
+
+	<!-- <script src="//unpkg.com/vconsole/dist/vconsole.min.js"></script>
+<script type="text/javascript">
+  var vConsole = new VConsole();
+</script> -->
+
+	<!--屏幕适配-->
+	<script>
+		var urlWin = window.location.href
+		var companyId = (urlWin.split('?')[1]).split('_')[0];
+		var branchId = (urlWin.split('?')[1]).split('_')[1];
+		var source = (urlWin.split('?')[1]).split('_')[2];
+		var companyCode = (urlWin.split('?')[1]).split('_')[3];
+		var mobile = (urlWin.split('?')[1]).split('_')[4];
+
+		var phone_reg = /^1[3-9][0-9]{9}$/i;
+
+		console.log('url-' + window.location);
+		console.log('companyId-' + companyId);
+		console.log('branchId-' + branchId);
+		console.log('companyCode-' + companyCode);
+		console.log('mobile-' + mobile);
+
+		//安卓调用前端方法
+		function sendPhone(mob) {
+			console.log('手机号:' + mob)
+			mobile = mob;
+			console.log('mob-' + mobile);
+		}
+
+		//判断是否为null或空字符串
+		function idenNull(elm) {
+			console.log(elm)
+			if (elm == null || elm == '' || elm == undefined) {
+				return false
+			}
+			return true
+		}
+		//取消按钮
+		$(".footer-box .close-btn").click(function () {
+			$(".tui-mask").addClass("hide");
+			$(this).parents(".footer-box").removeClass("in");
+		});
+		//点击认证
+		$(".certify-label").click(function () {
+			$(".tui-mask").removeClass("hide");
+			$(".certify-box").addClass("in");
+		});
+		var appSource = 'ios';
+		var followed = "";
+		var appkey = "B6B6282C-17D2-4941-B60A-01BCAC1347CE";
+		var enterpriseId = "5ae47a912e1183202eadac03";
+
+		/*日期格式化函数*/
+		Date.prototype.format = function (format) {
+			/*
+ * eg:new Date(value.peopleJointime).format("yyyy-MM-dd hh:mm:ss");
+ */
+			var o = {
+				"M+": this.getMonth() + 1, // month
+				"d+": this.getDate(), // day
+				"h+": this.getHours(), // hour
+				"m+": this.getMinutes(), // minute
+				"s+": this.getSeconds(), // second
+				"q+": Math.floor((this.getMonth() + 3) / 3), // quarter
+				"S": this.getMilliseconds()// millisecond
+			}
+			if (/(y+)/.test(format)) {
+				format = format.replace(RegExp.$1, (this.getFullYear() + "").substr(4
+					- RegExp.$1.length));
+			}
+			for (var k in o) {
+				if (new RegExp("(" + k + ")").test(format)) {
+					format = format.replace(RegExp.$1, RegExp.$1.length == 1
+						? o[k]
+						: ("00" + o[k]).substr(("" + o[k]).length));
+				}
+			}
+			return format;
+		}
+		get_con()
+		function get_con() {
+			$.ajax({
+				url: url + "/api/company/getCompanyInfo",
+				type: 'get',
+				data: {
+					companyId: companyId,
+					branchId: branchId,
+					source: source,
+					companyCode: companyCode,
+					mobile: mobile
+				},
+				success: function (res) {
+					console.log(res);
+					if (res.code == 1001) {
+						console.log("企业信息未录入！");
+						return;
+					}
+					if (res.code == 1000) {
+						console.log("网络异常！");
+						return;
+					}
+					var dom = [];
+					/* 日期格式转换 */
+					if (idenNull(res.data.enterpriseComment)) {
+						for (var i = 0; i < res.data.enterpriseComment.length; i++) {
+							res.data.enterpriseComment[i].commentTime = new Date(res.data.enterpriseComment[i].commentTime).format("yyyy年MM月dd日");
+						}
+					}
+
+
+					/*  console.log(dom) */
+					for (var i = 0; i < res.data.jobList.length; i++) {
+						res.data.jobList[i].jobLabel = res.data.jobList[i].jobLabel == null ? '' : res.data.jobList[i].jobLabel.split(',');//渲染数据之前截取
+					}
+
+
+					res.data.companyInfo.labels = res.data.companyInfo.labels == null ? '' : res.data.companyInfo.labels.split(',');//labels渲染数据之前截取
+					var html = template('con_m', res.data)
+
+					$('body').html(html)
+					$LAB
+						.setOptions({ AlwaysPreserveOrder: false }) // tells this chain to implicitly "wait" on
+						// execution (not loading) between each script
+						.script("static/app/js/amazeui.min.js") // script1, script2, script3, and script4 *DO* depend on each
+						// .script("getVerifyCode.js") // other, and will execute serially in order after all 4 have have
+						.wait(function () { })
+					var dom = [];
+					//用户点评
+					if (idenNull(res.data.enterpriseComment)) {
+						if (res.data.enterpriseComment.length > 0) {
+							$.each(res.data.enterpriseComment, function (i, j) {
+								if (i <= 2) {
+									dom.push('<div  class="comment_km">');  //最外成的div
+									dom.push('<div class="mm_com"><div class="p_name flex">');  //最外成的div
+									var name = j.commentUser.name;
+									if (j.isAnonymous == false) {
+										if (name == null || name == '') {
+											name = '匿名用户';
+										}
+									} else {
+										name = '匿名用户';
+									}
+									dom.push(' <p class="p_title">' + name + '</p>');
+									dom.push('<p class="item-stars" id="start_mm">');//创建星星的p标签
+									dom.push('<span class="stars">');//创建span的标签
+									if (j.comixEvaluation != null) {
+										for (var m = 1; m <= 5; m++) {
+											if (j.comixEvaluation >= m) {
+												dom.push('<i class="star star-all"></i>');
+											} else if (j.comixEvaluation < m && j.comixEvaluation > m - 1) {
+												dom.push('<i class="star star-half"></i>');
+											} else {
+												dom.push('<i class="star"></i>');
+											}
+										}
+									} else {
+										dom.push('<i class="star star-all"></i> ');
+										dom.push('<i class="star star-all"></i> ');
+										dom.push('<i class="star star-all"></i> ');
+										dom.push('<i class="star star-half"></i>');
+										dom.push('<i class="star"></i>');
+									}
+									dom.push('</span>');
+									dom.push('</p></div>');
+									if (idenNull(j.commentUser.icon)) {
+										dom.push('<div class="tu_com"><img src="' + j.commentUser.icon + '" alt=""></div>');
+									} else {
+										dom.push('<div class="tu_com"><img src="./static/m/images/default-user.png" alt=""></div>');
+									}
+									var jobName = j.jobName;
+									if (jobName != null && jobName != '') {
+										if (jobName.length > 9) {
+											jobName = jobName.substr(0, 9) + "...";
+										}
+										dom.push('<p class="p_content flex" style="box-sizing: border-box;"><span>' + j.commentTime + '</span>岗位:' + jobName + '</p>');
+									} else {
+										dom.push('<p class="p_content flex">' + j.commentTime + '</p>');
+									}
+									var arrLab = ['', '差', '一般', '还不错', '满意', '推荐']
+									j.evaluationExt1 = (j.evaluationExt1.split('.'))[0]
+									j.evaluationExt2 = (j.evaluationExt2.split('.'))[0]
+									j.evaluationExt3 = (j.evaluationExt3.split('.'))[0]
+									dom.push('<p class="welfare over"><span class="mr5">环境:' + arrLab[j.evaluationExt1] + '</span><span class="mr5">待遇:' + arrLab[j.evaluationExt2] + '</span><span class="mr5">福利:' + arrLab[j.evaluationExt3] + '</span></p>')
+									dom.push('</div>');
+									//评论
+									dom.push(' <p class="p_m">' + j.content + '</p>');
+									//添加图片
+									if ((j.imgPath1 != null && j.imgPath1 != '') || (j.imgPath2 != null && j.imgPath2 != '') || (j.imgPath3 != null && j.imgPath3 != '') || (j.imgPath4 != null && j.imgPath4 != '')) {
+										dom.push('<ul class="ul_img  style="margin-bottom: 0.2rem;">');
+										if (j.imgPath1 != null && j.imgPath1 != '') {
+											dom.push('<li style="display:inline-block;height:1.2rem;width:1.2rem;margin-right:0.1rem;"><img style="height:1.2rem;margin-right: 0.1rem;width:1.2rem" src="' + j.imgPath1 + '" /></li>');
+										}
+										if (j.imgPath2 != null && j.imgPath2 != '') {
+											dom.push('<li style="display:inline-block;height:1.2rem;width:1.2rem;margin-right:0.1rem;"><img style="height:1.2rem;margin-right: 0.1rem;width:1.2rem" src="' + j.imgPath2 + '" /></li>');
+										}
+										if (j.imgPath3 != null && j.imgPath3 != '') {
+											dom.push('<li style="display:inline-block;height:1.2rem;width:1.2rem;margin-right:0.1rem;"><img style="height:1.2rem;margin-right: 0.1rem;width:1.2rem" src="' + j.imgPath3 + '" /></li>');
+										}
+										if (j.imgPath4 != null && j.imgPath4 != '') {
+											dom.push('<li style="display:inline-block;height:1.2rem;width:1.2rem;margin-right:0.1rem;"><img style="height:1.2rem;margin-right: 0.1rem;width:1.2rem" src="' + j.imgPath4 + '" /></li>');
+										}
+										dom.push('</ul>');
+									}
+									//添加回复
+									if (idenNull(j.replyContent)) {
+										dom.push('<div class="answer"><p><span>优蓝网回复：</span>' + j.replyContent + '</p></div>')
+									}
+								}
+								dom.push('</div>');
+							});
+
+							$(".comment_m").append(dom.join(''));
+						}
+					}
+					/*星星点评*/
+					var comix = res.data.companyInfo.comixEvaluation;
+					if (comix == null || comix == '') {
+						$(".stars .one").addClass('star-all')
+						$(".stars .two").addClass('star-all');
+						$(".stars .three").addClass('star-all');
+					} else {
+						comix = comix.split(".")[0];
+						console.log(comix)
+						if (comix == 0) {
+							$(".stars .one").addClass('star-all')
+							$(".stars .two").addClass('star-all');
+							$(".stars .three").addClass('star-all');
+						}
+						if (comix == 1) {
+							$(".stars .one").addClass('star-all');
+						}
+						if (comix == 2) {
+							$(".stars .one").addClass('star-all')
+							$(".stars .two").addClass('star-all');
+						}
+						if (comix == 3) {
+							$(".stars .one").addClass('star-all')
+							$(".stars .two").addClass('star-all');
+							$(".stars .three").addClass('star-all');
+						}
+						if (comix == 4) {
+							$(".stars .one").addClass('star-all')
+							$(".stars .two").addClass('star-all');
+							$(".stars .three").addClass('star-all');
+							$(".stars .four").addClass('star-all');
+						}
+						if (comix == 5) {
+							$(".stars .star").addClass("star-all");
+						}
+					}
+
+					//锚点根据页面石某滚动一定高度而固定在顶部
+					$(window).scroll(function () {
+						if ($(window).scrollTop() > 300) {
+							$(".anchors").addClass("fix");
+						}
+						else {
+							$(".anchors").removeClass("fix");
+						}
+					});
+					//点评领金币
+					$('#dian_ping .getGold').click(function () {
+						dianping()
+					})
+					//我要提问
+					$(".ask_me").click(function () {
+						company_ask();
+					});
+					//企业问答《查看所有》
+					$("#lookAll").click(function () {
+						var communityTalkCount = res.data.communityTalkCount;
+						if (communityTalkCount == null || communityTalkCount == '' || communityTalkCount == 0) {
+							company_ask(2);
+						} else {
+							company_ask(1);
+						}
+					});
+
+					function dianping() {
+						if (mobile != null && mobile != '' && mobile != undefined) {//已登录
+							var abbreviation = res.data.companyInfo.abbreviation;
+							var companyId = res.data.companyInfo.companyId;
+							console.log('abbreviation:' + abbreviation)
+							console.log('companyId:' + companyId)
+							if (source == "android") {
+								window.control.toEvaluatePage('', companyId, '', abbreviation);
+							} else if (source == "ios") {
+								location.href = "ios://toEvaluatePage?companyId=" + companyId + "&abbreviation=" + abbreviation;
+							}
+						} else {
+							if (source == "android") {
+								window.control.toLogin(2);
+							} else if (source == "ios") {
+								location.href = "ios://toLogin?needValideMobile=2";
+							}
+						}
+					}
+
+					$("#askAndGetIntegral").click(function () {
+						company_ask(2);
+					});
+
+					function company_ask(action) {
+						var askURL = "./advisoryForAppAsk.html?companyid=" + res.data.companyInfo.companyId + "&appSource=" + source + "&action=" + action;
+						if (mobile != null && mobile != '' && mobile != undefined && phone_reg.test(mobile)) {//已登录
+							window.location.href = askURL + "&mobile=" + mobile;
+						} else {
+							window.location.href = askURL;
+						}
+					}
+					//企业点评《查看所有》
+					$("#lookCompanyAll").click(function () {
+						var enterpriseCommentCount = res.data.companyInfo.enterpriseCommentCount;
+						if (enterpriseCommentCount == null || enterpriseCommentCount == '' || enterpriseCommentCount == 0) {
+							dianping();
+						} else {
+							window.location.href = "./enterprise/comment.html?enterpriseCode=" + res.data.companyInfo.companyCode + '&abbreviation=' + res.data.companyInfo.abbreviation;
+						}
+					});
+					//反馈企业信息错误
+					$(".correction").click(function () {
+						//已登录
+						if (mobile != null && mobile != "" && mobile != "null") {
+							window.location.href = "./feedback.html?appSource=" + source + "&token=&client_id=&mobile=" + mobile;
+						} else {
+							window.location.href = "./feedback.html?appSource=" + source + "&token=&client_id=";
+						}
+					});
+
+					//关注
+					$(".icon-heart").click(function () {
+						var that = this;
+						var followed = true;
+						if ($(this).hasClass("active")) {
+							followed = false;
+						}
+						if (mobile != null && mobile != '' && mobile != undefined && phone_reg.test(mobile)) {//已登录
+							var enterpriseId = res.data.companyInfo.companyCode;
+							var companyId = res.data.companyInfo.companyId;
+							$.post("/app/enterprise/updateFollowed", { "companyId": companyId, "enterpriseCode": enterpriseId, "followed": followed, "mobile": mobile }, function (result) {
+								if (result == "success") {
+									if (followed) {
+										$(that).addClass("active");
+									} else {
+										$(that).removeClass("active");
+									}
+								}
+							});
+						} else {
+							if (source == "android") {
+								window.control.toLogin(2);
+							} else if (source == "ios") {
+								location.href = "ios://toLogin?needValideMobile=2";
+							}
+						}
+					});
+
+					//点地图
+					$("#map").click(function () {
+						window.location.href = "baiduMap.html?address=" + res.data.companyInfo.address + "&cityId=" + res.data.companyInfo.cityid + "&appSource=" + source + "&latitude=" + res.data.companyInfo.latitude + "&longitude=" + res.data.companyInfo.longitude;
+					});
+
+					//相册
+					$("#a_album").click(function () {
+						window.location.href = "./enterprise/album.html?companyId=" + res.data.companyInfo.companyId;
+					});
+
+					//点电话
+					$("#tel_contact_phone").click(function () {
+						var telPhone = $(this).attr("data-num");
+						if (source == "android") {
+							window.control.telPhone(telPhone);
+						} else {
+							location.href = "tel:" + telPhone;
+						}
+					});
+
+					//点评列表
+					$("#a1_comment").click(function () {
+						var enterpriseCommentCount = res.data.companyInfo.enterpriseCommentCount;
+						if (enterpriseCommentCount == null || enterpriseCommentCount == '' || enterpriseCommentCount == 0) {
+							dianping();
+						} else {
+							window.location.href = "./enterprise/comment.html?enterpriseCode=" + res.data.companyInfo.companyCode + '&abbreviation=' + res.data.companyInfo.abbreviation;
+						}
+					});
+					//是否关注
+					var isFllow = res.data.isFllow;
+					if (isFllow) {//已关注
+						$('.icon-heart').addClass("active");
+					} else {
+						$('.icon-heart').removeClass("active");
+					}
+
+					//跳转到职位详情
+					$("#job-item-container").delegate(".item", "click", function () {
+						var cityId = $(this).attr('data-city')
+						var jobId = $(this).attr('data-job')
+						if (source == "ios") {
+							location.href = "ios://ToPositionDetails?cityId=" + cityId + "&jobId=" + jobId;
+						}
+						if (source == "android") {
+							window.control.toJobDetail(cityId, jobId)
+						}
+					});
+				},
+				error: function (e) {
+					console.log(e);
+				}
+			})
+		}
+	</script>
+	<!-- 添加GIO统计代码 -->
+	<script type="text/javascript">
+		//百度
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "//hm.baidu.com/hm.js?acb6165d39166a0e697e4c05679d1692";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+
+		var _vds = _vds || [];
+		window._vds = _vds;
+		(function () {
+			_vds.push(['setAccountId', 'b9096b98ce7e21fc']);
+			_vds.push(['setPageGroup', 'CompanyDetailPageGroup']);
+			_vds.push(['setPS1', '214330']);
+			_vds.push(['setPS2', '富士康科技']);
+			(function () {
+				var vds = document.createElement('script');
+				vds.type = 'text/javascript';
+				vds.async = true;
+				vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(vds, s);
+			})();
+		})();
+	</script>
+	<div class="mask-layer"></div>
+</body>
+
+</html>
