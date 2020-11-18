@@ -1,0 +1,1386 @@
+[
+  {
+    "REGIONNAME": "石家庄",
+    "REGIONCODE": "130100"
+  },
+  {
+    "REGIONNAME": "邢台",
+    "REGIONCODE": "130500"
+  },
+  {
+    "REGIONNAME": "唐山",
+    "REGIONCODE": "130200"
+  },
+  {
+    "REGIONNAME": "秦皇岛",
+    "REGIONCODE": "130300"
+  },
+  {
+    "REGIONNAME": "保定",
+    "REGIONCODE": "130600"
+  },
+  {
+    "REGIONNAME": "衡水",
+    "REGIONCODE": "131100"
+  },
+  {
+    "REGIONNAME": "张家口",
+    "REGIONCODE": "130700"
+  },
+  {
+    "REGIONNAME": "廊坊",
+    "REGIONCODE": "131000"
+  },
+  {
+    "REGIONNAME": "沧州",
+    "REGIONCODE": "130900"
+  },
+  {
+    "REGIONNAME": "邯郸",
+    "REGIONCODE": "130400"
+  },
+  {
+    "REGIONNAME": "承德",
+    "REGIONCODE": "130800"
+  },
+  {
+    "REGIONNAME": "那曲",
+    "REGIONCODE": "542400"
+  },
+  {
+    "REGIONNAME": "日喀则",
+    "REGIONCODE": "540200"
+  },
+  {
+    "REGIONNAME": "阿里",
+    "REGIONCODE": "542500"
+  },
+  {
+    "REGIONNAME": "拉萨",
+    "REGIONCODE": "540100"
+  },
+  {
+    "REGIONNAME": "林芝",
+    "REGIONCODE": "542600"
+  },
+  {
+    "REGIONNAME": "昌都",
+    "REGIONCODE": "542100"
+  },
+  {
+    "REGIONNAME": "山南",
+    "REGIONCODE": "542200"
+  },
+  {
+    "REGIONNAME": "徐州",
+    "REGIONCODE": "320300"
+  },
+  {
+    "REGIONNAME": "连云港",
+    "REGIONCODE": "320700"
+  },
+  {
+    "REGIONNAME": "南京",
+    "REGIONCODE": "320100"
+  },
+  {
+    "REGIONNAME": "宿迁",
+    "REGIONCODE": "321300"
+  },
+  {
+    "REGIONNAME": "南通",
+    "REGIONCODE": "320600"
+  },
+  {
+    "REGIONNAME": "苏州",
+    "REGIONCODE": "320500"
+  },
+  {
+    "REGIONNAME": "泰州",
+    "REGIONCODE": "321200"
+  },
+  {
+    "REGIONNAME": "淮安",
+    "REGIONCODE": "320800"
+  },
+  {
+    "REGIONNAME": "常州",
+    "REGIONCODE": "320400"
+  },
+  {
+    "REGIONNAME": "镇江",
+    "REGIONCODE": "321100"
+  },
+  {
+    "REGIONNAME": "盐城",
+    "REGIONCODE": "320900"
+  },
+  {
+    "REGIONNAME": "无锡",
+    "REGIONCODE": "320200"
+  },
+  {
+    "REGIONNAME": "扬州",
+    "REGIONCODE": "321000"
+  },
+  {
+    "REGIONNAME": "吉林",
+    "REGIONCODE": "220200"
+  },
+  {
+    "REGIONNAME": "辽源",
+    "REGIONCODE": "220400"
+  },
+  {
+    "REGIONNAME": "通化",
+    "REGIONCODE": "220500"
+  },
+  {
+    "REGIONNAME": "白城",
+    "REGIONCODE": "220800"
+  },
+  {
+    "REGIONNAME": "白山",
+    "REGIONCODE": "220600"
+  },
+  {
+    "REGIONNAME": "松原",
+    "REGIONCODE": "220700"
+  },
+  {
+    "REGIONNAME": "延边朝鲜族",
+    "REGIONCODE": "222400"
+  },
+  {
+    "REGIONNAME": "四平",
+    "REGIONCODE": "220300"
+  },
+  {
+    "REGIONNAME": "长春",
+    "REGIONCODE": "220100"
+  },
+  {
+    "REGIONNAME": "朔州",
+    "REGIONCODE": "140600"
+  },
+  {
+    "REGIONNAME": "太原",
+    "REGIONCODE": "140100"
+  },
+  {
+    "REGIONNAME": "吕梁",
+    "REGIONCODE": "141100"
+  },
+  {
+    "REGIONNAME": "临汾",
+    "REGIONCODE": "141000"
+  },
+  {
+    "REGIONNAME": "大同",
+    "REGIONCODE": "140200"
+  },
+  {
+    "REGIONNAME": "运城",
+    "REGIONCODE": "140800"
+  },
+  {
+    "REGIONNAME": "晋城",
+    "REGIONCODE": "140500"
+  },
+  {
+    "REGIONNAME": "晋中",
+    "REGIONCODE": "140700"
+  },
+  {
+    "REGIONNAME": "忻州",
+    "REGIONCODE": "140900"
+  },
+  {
+    "REGIONNAME": "长治",
+    "REGIONCODE": "140400"
+  },
+  {
+    "REGIONNAME": "阳泉",
+    "REGIONCODE": "140300"
+  },
+  {
+    "REGIONNAME": "上海",
+    "REGIONCODE": "310100"
+  },
+  {
+    "REGIONNAME": "上海县",
+    "REGIONCODE": "310200"
+  },
+  {
+    "REGIONNAME": "襄阳",
+    "REGIONCODE": "420600"
+  },
+  {
+    "REGIONNAME": "十堰",
+    "REGIONCODE": "420300"
+  },
+  {
+    "REGIONNAME": "随州",
+    "REGIONCODE": "421300"
+  },
+  {
+    "REGIONNAME": "荆州",
+    "REGIONCODE": "421000"
+  },
+  {
+    "REGIONNAME": "武汉",
+    "REGIONCODE": "420100"
+  },
+  {
+    "REGIONNAME": "孝感",
+    "REGIONCODE": "420900"
+  },
+  {
+    "REGIONNAME": "咸宁",
+    "REGIONCODE": "421200"
+  },
+  {
+    "REGIONNAME": "黄冈",
+    "REGIONCODE": "421100"
+  },
+  {
+    "REGIONNAME": "湖北直辖县",
+    "REGIONCODE": "429000"
+  },
+  {
+    "REGIONNAME": "黄石",
+    "REGIONCODE": "420200"
+  },
+  {
+    "REGIONNAME": "鄂州",
+    "REGIONCODE": "420700"
+  },
+  {
+    "REGIONNAME": "恩施土家族苗族",
+    "REGIONCODE": "422800"
+  },
+  {
+    "REGIONNAME": "宜昌",
+    "REGIONCODE": "420500"
+  },
+  {
+    "REGIONNAME": "荆门",
+    "REGIONCODE": "420800"
+  },
+  {
+    "REGIONNAME": "汉中",
+    "REGIONCODE": "610700"
+  },
+  {
+    "REGIONNAME": "渭南",
+    "REGIONCODE": "610500"
+  },
+  {
+    "REGIONNAME": "铜川",
+    "REGIONCODE": "610200"
+  },
+  {
+    "REGIONNAME": "西安",
+    "REGIONCODE": "610100"
+  },
+  {
+    "REGIONNAME": "榆林",
+    "REGIONCODE": "610800"
+  },
+  {
+    "REGIONNAME": "商洛",
+    "REGIONCODE": "611000"
+  },
+  {
+    "REGIONNAME": "延安",
+    "REGIONCODE": "610600"
+  },
+  {
+    "REGIONNAME": "安康",
+    "REGIONCODE": "610900"
+  },
+  {
+    "REGIONNAME": "咸阳",
+    "REGIONCODE": "610400"
+  },
+  {
+    "REGIONNAME": "宝鸡",
+    "REGIONCODE": "610300"
+  },
+  {
+    "REGIONNAME": "淮南",
+    "REGIONCODE": "340400"
+  },
+  {
+    "REGIONNAME": "池州",
+    "REGIONCODE": "341700"
+  },
+  {
+    "REGIONNAME": "亳州",
+    "REGIONCODE": "341600"
+  },
+  {
+    "REGIONNAME": "合肥",
+    "REGIONCODE": "340100"
+  },
+  {
+    "REGIONNAME": "蚌埠",
+    "REGIONCODE": "340300"
+  },
+  {
+    "REGIONNAME": "芜湖",
+    "REGIONCODE": "340200"
+  },
+  {
+    "REGIONNAME": "阜阳",
+    "REGIONCODE": "341200"
+  },
+  {
+    "REGIONNAME": "马鞍山",
+    "REGIONCODE": "340500"
+  },
+  {
+    "REGIONNAME": "六安",
+    "REGIONCODE": "341500"
+  },
+  {
+    "REGIONNAME": "宿州",
+    "REGIONCODE": "341300"
+  },
+  {
+    "REGIONNAME": "黄山",
+    "REGIONCODE": "341000"
+  },
+  {
+    "REGIONNAME": "宣城",
+    "REGIONCODE": "341800"
+  },
+  {
+    "REGIONNAME": "铜陵",
+    "REGIONCODE": "340700"
+  },
+  {
+    "REGIONNAME": "滁州",
+    "REGIONCODE": "341100"
+  },
+  {
+    "REGIONNAME": "淮北",
+    "REGIONCODE": "340600"
+  },
+  {
+    "REGIONNAME": "安庆",
+    "REGIONCODE": "340800"
+  },
+  {
+    "REGIONNAME": "北京县",
+    "REGIONCODE": "110200"
+  },
+  {
+    "REGIONNAME": "北京市",
+    "REGIONCODE": "110100"
+  },
+  {
+    "REGIONNAME": "和田",
+    "REGIONCODE": "653200"
+  },
+  {
+    "REGIONNAME": "哈密",
+    "REGIONCODE": "652200"
+  },
+  {
+    "REGIONNAME": "巴音郭楞蒙古",
+    "REGIONCODE": "652800"
+  },
+  {
+    "REGIONNAME": "克拉玛依",
+    "REGIONCODE": "650200"
+  },
+  {
+    "REGIONNAME": "塔城",
+    "REGIONCODE": "654200"
+  },
+  {
+    "REGIONNAME": "博尔塔拉蒙古",
+    "REGIONCODE": "652700"
+  },
+  {
+    "REGIONNAME": "新疆直辖县",
+    "REGIONCODE": "659000"
+  },
+  {
+    "REGIONNAME": "昌吉回族",
+    "REGIONCODE": "652300"
+  },
+  {
+    "REGIONNAME": "吐鲁番",
+    "REGIONCODE": "652100"
+  },
+  {
+    "REGIONNAME": "喀什",
+    "REGIONCODE": "653100"
+  },
+  {
+    "REGIONNAME": "阿勒泰",
+    "REGIONCODE": "654300"
+  },
+  {
+    "REGIONNAME": "阿克苏",
+    "REGIONCODE": "652900"
+  },
+  {
+    "REGIONNAME": "克孜勒苏柯尔克孜",
+    "REGIONCODE": "653000"
+  },
+  {
+    "REGIONNAME": "伊犁哈萨克",
+    "REGIONCODE": "654000"
+  },
+  {
+    "REGIONNAME": "乌鲁木齐",
+    "REGIONCODE": "650100"
+  },
+  {
+    "REGIONNAME": "崇左",
+    "REGIONCODE": "451400"
+  },
+  {
+    "REGIONNAME": "柳州",
+    "REGIONCODE": "450200"
+  },
+  {
+    "REGIONNAME": "北海",
+    "REGIONCODE": "450500"
+  },
+  {
+    "REGIONNAME": "贵港",
+    "REGIONCODE": "450800"
+  },
+  {
+    "REGIONNAME": "钦州",
+    "REGIONCODE": "450700"
+  },
+  {
+    "REGIONNAME": "防城港",
+    "REGIONCODE": "450600"
+  },
+  {
+    "REGIONNAME": "贺州",
+    "REGIONCODE": "451100"
+  },
+  {
+    "REGIONNAME": "梧州",
+    "REGIONCODE": "450400"
+  },
+  {
+    "REGIONNAME": "玉林",
+    "REGIONCODE": "450900"
+  },
+  {
+    "REGIONNAME": "南宁",
+    "REGIONCODE": "450100"
+  },
+  {
+    "REGIONNAME": "河池",
+    "REGIONCODE": "451200"
+  },
+  {
+    "REGIONNAME": "桂林",
+    "REGIONCODE": "450300"
+  },
+  {
+    "REGIONNAME": "来宾",
+    "REGIONCODE": "451300"
+  },
+  {
+    "REGIONNAME": "百色",
+    "REGIONCODE": "451000"
+  },
+  {
+    "REGIONNAME": "七台河",
+    "REGIONCODE": "230900"
+  },
+  {
+    "REGIONNAME": "鹤岗",
+    "REGIONCODE": "230400"
+  },
+  {
+    "REGIONNAME": "双鸭山",
+    "REGIONCODE": "230500"
+  },
+  {
+    "REGIONNAME": "鸡西",
+    "REGIONCODE": "230300"
+  },
+  {
+    "REGIONNAME": "齐齐哈尔",
+    "REGIONCODE": "230200"
+  },
+  {
+    "REGIONNAME": "黑河",
+    "REGIONCODE": "231100"
+  },
+  {
+    "REGIONNAME": "伊春",
+    "REGIONCODE": "230700"
+  },
+  {
+    "REGIONNAME": "绥化",
+    "REGIONCODE": "231200"
+  },
+  {
+    "REGIONNAME": "大庆",
+    "REGIONCODE": "230600"
+  },
+  {
+    "REGIONNAME": "哈尔滨",
+    "REGIONCODE": "230100"
+  },
+  {
+    "REGIONNAME": "牡丹江",
+    "REGIONCODE": "231000"
+  },
+  {
+    "REGIONNAME": "佳木斯",
+    "REGIONCODE": "230800"
+  },
+  {
+    "REGIONNAME": "大兴安岭",
+    "REGIONCODE": "232700"
+  },
+  {
+    "REGIONNAME": "德宏傣族景颇族",
+    "REGIONCODE": "533100"
+  },
+  {
+    "REGIONNAME": "文山壮族苗族",
+    "REGIONCODE": "532600"
+  },
+  {
+    "REGIONNAME": "玉溪",
+    "REGIONCODE": "530400"
+  },
+  {
+    "REGIONNAME": "普洱",
+    "REGIONCODE": "530800"
+  },
+  {
+    "REGIONNAME": "怒江傈僳族",
+    "REGIONCODE": "533300"
+  },
+  {
+    "REGIONNAME": "楚雄彝族",
+    "REGIONCODE": "532300"
+  },
+  {
+    "REGIONNAME": "西双版纳傣族",
+    "REGIONCODE": "532800"
+  },
+  {
+    "REGIONNAME": "临沧",
+    "REGIONCODE": "530900"
+  },
+  {
+    "REGIONNAME": "大理白族",
+    "REGIONCODE": "532900"
+  },
+  {
+    "REGIONNAME": "红河哈尼族彝族",
+    "REGIONCODE": "532500"
+  },
+  {
+    "REGIONNAME": "丽江",
+    "REGIONCODE": "530700"
+  },
+  {
+    "REGIONNAME": "保山",
+    "REGIONCODE": "530500"
+  },
+  {
+    "REGIONNAME": "曲靖",
+    "REGIONCODE": "530300"
+  },
+  {
+    "REGIONNAME": "迪庆藏族",
+    "REGIONCODE": "533400"
+  },
+  {
+    "REGIONNAME": "昭通",
+    "REGIONCODE": "530600"
+  },
+  {
+    "REGIONNAME": "昆明",
+    "REGIONCODE": "530100"
+  },
+  {
+    "REGIONNAME": "杭州",
+    "REGIONCODE": "330100"
+  },
+  {
+    "REGIONNAME": "嘉兴",
+    "REGIONCODE": "330400"
+  },
+  {
+    "REGIONNAME": "宁波",
+    "REGIONCODE": "330200"
+  },
+  {
+    "REGIONNAME": "台州",
+    "REGIONCODE": "331000"
+  },
+  {
+    "REGIONNAME": "丽水",
+    "REGIONCODE": "331100"
+  },
+  {
+    "REGIONNAME": "舟山",
+    "REGIONCODE": "330900"
+  },
+  {
+    "REGIONNAME": "金华",
+    "REGIONCODE": "330700"
+  },
+  {
+    "REGIONNAME": "温州",
+    "REGIONCODE": "330300"
+  },
+  {
+    "REGIONNAME": "衢州",
+    "REGIONCODE": "330800"
+  },
+  {
+    "REGIONNAME": "绍兴",
+    "REGIONCODE": "330600"
+  },
+  {
+    "REGIONNAME": "湖州",
+    "REGIONCODE": "330500"
+  },
+  {
+    "REGIONNAME": "固原",
+    "REGIONCODE": "640400"
+  },
+  {
+    "REGIONNAME": "银川",
+    "REGIONCODE": "640100"
+  },
+  {
+    "REGIONNAME": "中卫",
+    "REGIONCODE": "640500"
+  },
+  {
+    "REGIONNAME": "吴忠",
+    "REGIONCODE": "640300"
+  },
+  {
+    "REGIONNAME": "石嘴山",
+    "REGIONCODE": "640200"
+  },
+  {
+    "REGIONNAME": "海东",
+    "REGIONCODE": "630200"
+  },
+  {
+    "REGIONNAME": "海西蒙古族藏族",
+    "REGIONCODE": "632800"
+  },
+  {
+    "REGIONNAME": "果洛藏族",
+    "REGIONCODE": "632600"
+  },
+  {
+    "REGIONNAME": "黄南藏族",
+    "REGIONCODE": "632300"
+  },
+  {
+    "REGIONNAME": "西宁",
+    "REGIONCODE": "630100"
+  },
+  {
+    "REGIONNAME": "玉树藏族",
+    "REGIONCODE": "632700"
+  },
+  {
+    "REGIONNAME": "海南藏族",
+    "REGIONCODE": "632500"
+  },
+  {
+    "REGIONNAME": "海北藏族",
+    "REGIONCODE": "632200"
+  },
+  {
+    "REGIONNAME": "云浮",
+    "REGIONCODE": "445300"
+  },
+  {
+    "REGIONNAME": "深圳",
+    "REGIONCODE": "440300"
+  },
+  {
+    "REGIONNAME": "江门",
+    "REGIONCODE": "440700"
+  },
+  {
+    "REGIONNAME": "广州",
+    "REGIONCODE": "440100"
+  },
+  {
+    "REGIONNAME": "汕头",
+    "REGIONCODE": "440500"
+  },
+  {
+    "REGIONNAME": "梅州",
+    "REGIONCODE": "441400"
+  },
+  {
+    "REGIONNAME": "中山",
+    "REGIONCODE": "442000"
+  },
+  {
+    "REGIONNAME": "韶关",
+    "REGIONCODE": "440200"
+  },
+  {
+    "REGIONNAME": "河源",
+    "REGIONCODE": "441600"
+  },
+  {
+    "REGIONNAME": "潮州",
+    "REGIONCODE": "445100"
+  },
+  {
+    "REGIONNAME": "阳江",
+    "REGIONCODE": "441700"
+  },
+  {
+    "REGIONNAME": "东莞",
+    "REGIONCODE": "441900"
+  },
+  {
+    "REGIONNAME": "汕尾",
+    "REGIONCODE": "441500"
+  },
+  {
+    "REGIONNAME": "珠海",
+    "REGIONCODE": "440400"
+  },
+  {
+    "REGIONNAME": "佛山",
+    "REGIONCODE": "440600"
+  },
+  {
+    "REGIONNAME": "揭阳",
+    "REGIONCODE": "445200"
+  },
+  {
+    "REGIONNAME": "茂名",
+    "REGIONCODE": "440900"
+  },
+  {
+    "REGIONNAME": "肇庆",
+    "REGIONCODE": "441200"
+  },
+  {
+    "REGIONNAME": "惠州",
+    "REGIONCODE": "441300"
+  },
+  {
+    "REGIONNAME": "清远",
+    "REGIONCODE": "441800"
+  },
+  {
+    "REGIONNAME": "湛江",
+    "REGIONCODE": "440800"
+  },
+  {
+    "REGIONNAME": "遵义",
+    "REGIONCODE": "520300"
+  },
+  {
+    "REGIONNAME": "安顺",
+    "REGIONCODE": "520400"
+  },
+  {
+    "REGIONNAME": "黔东南苗族侗族",
+    "REGIONCODE": "522600"
+  },
+  {
+    "REGIONNAME": "毕节",
+    "REGIONCODE": "520500"
+  },
+  {
+    "REGIONNAME": "铜仁",
+    "REGIONCODE": "520600"
+  },
+  {
+    "REGIONNAME": "贵阳",
+    "REGIONCODE": "520100"
+  },
+  {
+    "REGIONNAME": "黔南布依族苗族",
+    "REGIONCODE": "522700"
+  },
+  {
+    "REGIONNAME": "黔西南布依族苗族",
+    "REGIONCODE": "522300"
+  },
+  {
+    "REGIONNAME": "六盘水",
+    "REGIONCODE": "520200"
+  },
+  {
+    "REGIONNAME": "乌海",
+    "REGIONCODE": "150300"
+  },
+  {
+    "REGIONNAME": "巴彦淖尔",
+    "REGIONCODE": "150800"
+  },
+  {
+    "REGIONNAME": "呼伦贝尔",
+    "REGIONCODE": "150700"
+  },
+  {
+    "REGIONNAME": "乌兰察布",
+    "REGIONCODE": "150900"
+  },
+  {
+    "REGIONNAME": "鄂尔多斯",
+    "REGIONCODE": "150600"
+  },
+  {
+    "REGIONNAME": "阿拉善盟",
+    "REGIONCODE": "152900"
+  },
+  {
+    "REGIONNAME": "锡林郭勒盟",
+    "REGIONCODE": "152500"
+  },
+  {
+    "REGIONNAME": "呼和浩特",
+    "REGIONCODE": "150100"
+  },
+  {
+    "REGIONNAME": "兴安盟",
+    "REGIONCODE": "152200"
+  },
+  {
+    "REGIONNAME": "赤峰",
+    "REGIONCODE": "150400"
+  },
+  {
+    "REGIONNAME": "包头",
+    "REGIONCODE": "150200"
+  },
+  {
+    "REGIONNAME": "通辽",
+    "REGIONCODE": "150500"
+  },
+  {
+    "REGIONNAME": "漳州",
+    "REGIONCODE": "350600"
+  },
+  {
+    "REGIONNAME": "宁德",
+    "REGIONCODE": "350900"
+  },
+  {
+    "REGIONNAME": "龙岩",
+    "REGIONCODE": "350800"
+  },
+  {
+    "REGIONNAME": "泉州",
+    "REGIONCODE": "350500"
+  },
+  {
+    "REGIONNAME": "三明",
+    "REGIONCODE": "350400"
+  },
+  {
+    "REGIONNAME": "莆田",
+    "REGIONCODE": "350300"
+  },
+  {
+    "REGIONNAME": "南平",
+    "REGIONCODE": "350700"
+  },
+  {
+    "REGIONNAME": "厦门",
+    "REGIONCODE": "350200"
+  },
+  {
+    "REGIONNAME": "福州",
+    "REGIONCODE": "350100"
+  },
+  {
+    "REGIONNAME": "重庆市",
+    "REGIONCODE": "500100"
+  },
+  {
+    "REGIONNAME": "重庆县",
+    "REGIONCODE": "500200"
+  },
+  {
+    "REGIONNAME": "成都",
+    "REGIONCODE": "510100"
+  },
+  {
+    "REGIONNAME": "广安",
+    "REGIONCODE": "511600"
+  },
+  {
+    "REGIONNAME": "广元",
+    "REGIONCODE": "510800"
+  },
+  {
+    "REGIONNAME": "乐山",
+    "REGIONCODE": "511100"
+  },
+  {
+    "REGIONNAME": "甘孜藏族",
+    "REGIONCODE": "513300"
+  },
+  {
+    "REGIONNAME": "巴中",
+    "REGIONCODE": "511900"
+  },
+  {
+    "REGIONNAME": "宜宾",
+    "REGIONCODE": "511500"
+  },
+  {
+    "REGIONNAME": "自贡",
+    "REGIONCODE": "510300"
+  },
+  {
+    "REGIONNAME": "德阳",
+    "REGIONCODE": "510600"
+  },
+  {
+    "REGIONNAME": "南充",
+    "REGIONCODE": "511300"
+  },
+  {
+    "REGIONNAME": "雅安",
+    "REGIONCODE": "511800"
+  },
+  {
+    "REGIONNAME": "遂宁",
+    "REGIONCODE": "510900"
+  },
+  {
+    "REGIONNAME": "内江",
+    "REGIONCODE": "511000"
+  },
+  {
+    "REGIONNAME": "攀枝花",
+    "REGIONCODE": "510400"
+  },
+  {
+    "REGIONNAME": "泸州",
+    "REGIONCODE": "510500"
+  },
+  {
+    "REGIONNAME": "阿坝藏族羌族",
+    "REGIONCODE": "513200"
+  },
+  {
+    "REGIONNAME": "眉山",
+    "REGIONCODE": "511400"
+  },
+  {
+    "REGIONNAME": "资阳",
+    "REGIONCODE": "512000"
+  },
+  {
+    "REGIONNAME": "绵阳",
+    "REGIONCODE": "510700"
+  },
+  {
+    "REGIONNAME": "凉山彝族",
+    "REGIONCODE": "513400"
+  },
+  {
+    "REGIONNAME": "达州",
+    "REGIONCODE": "511700"
+  },
+  {
+    "REGIONNAME": "临沂",
+    "REGIONCODE": "371300"
+  },
+  {
+    "REGIONNAME": "威海",
+    "REGIONCODE": "371000"
+  },
+  {
+    "REGIONNAME": "聊城",
+    "REGIONCODE": "371500"
+  },
+  {
+    "REGIONNAME": "泰安",
+    "REGIONCODE": "370900"
+  },
+  {
+    "REGIONNAME": "日照",
+    "REGIONCODE": "371100"
+  },
+  {
+    "REGIONNAME": "济南",
+    "REGIONCODE": "370100"
+  },
+  {
+    "REGIONNAME": "莱芜",
+    "REGIONCODE": "371200"
+  },
+  {
+    "REGIONNAME": "滨州",
+    "REGIONCODE": "371600"
+  },
+  {
+    "REGIONNAME": "枣庄",
+    "REGIONCODE": "370400"
+  },
+  {
+    "REGIONNAME": "淄博",
+    "REGIONCODE": "370300"
+  },
+  {
+    "REGIONNAME": "德州",
+    "REGIONCODE": "371400"
+  },
+  {
+    "REGIONNAME": "东营",
+    "REGIONCODE": "370500"
+  },
+  {
+    "REGIONNAME": "济宁",
+    "REGIONCODE": "370800"
+  },
+  {
+    "REGIONNAME": "潍坊",
+    "REGIONCODE": "370700"
+  },
+  {
+    "REGIONNAME": "菏泽",
+    "REGIONCODE": "371700"
+  },
+  {
+    "REGIONNAME": "青岛",
+    "REGIONCODE": "370200"
+  },
+  {
+    "REGIONNAME": "烟台",
+    "REGIONCODE": "370600"
+  },
+  {
+    "REGIONNAME": "长沙",
+    "REGIONCODE": "430100"
+  },
+  {
+    "REGIONNAME": "益阳",
+    "REGIONCODE": "430900"
+  },
+  {
+    "REGIONNAME": "湘潭",
+    "REGIONCODE": "430300"
+  },
+  {
+    "REGIONNAME": "邵阳",
+    "REGIONCODE": "430500"
+  },
+  {
+    "REGIONNAME": "湘西土家族苗族",
+    "REGIONCODE": "433100"
+  },
+  {
+    "REGIONNAME": "株洲",
+    "REGIONCODE": "430200"
+  },
+  {
+    "REGIONNAME": "怀化",
+    "REGIONCODE": "431200"
+  },
+  {
+    "REGIONNAME": "张家界",
+    "REGIONCODE": "430800"
+  },
+  {
+    "REGIONNAME": "常德",
+    "REGIONCODE": "430700"
+  },
+  {
+    "REGIONNAME": "娄底",
+    "REGIONCODE": "431300"
+  },
+  {
+    "REGIONNAME": "永州",
+    "REGIONCODE": "431100"
+  },
+  {
+    "REGIONNAME": "岳阳",
+    "REGIONCODE": "430600"
+  },
+  {
+    "REGIONNAME": "郴州",
+    "REGIONCODE": "431000"
+  },
+  {
+    "REGIONNAME": "衡阳",
+    "REGIONCODE": "430400"
+  },
+  {
+    "REGIONNAME": "三沙",
+    "REGIONCODE": "460300"
+  },
+  {
+    "REGIONNAME": "三亚",
+    "REGIONCODE": "460200"
+  },
+  {
+    "REGIONNAME": "海南直辖县",
+    "REGIONCODE": "469000"
+  },
+  {
+    "REGIONNAME": "海口",
+    "REGIONCODE": "460100"
+  },
+  {
+    "REGIONNAME": "宜春",
+    "REGIONCODE": "360900"
+  },
+  {
+    "REGIONNAME": "吉安",
+    "REGIONCODE": "360800"
+  },
+  {
+    "REGIONNAME": "景德镇",
+    "REGIONCODE": "360200"
+  },
+  {
+    "REGIONNAME": "抚州",
+    "REGIONCODE": "361000"
+  },
+  {
+    "REGIONNAME": "新余",
+    "REGIONCODE": "360500"
+  },
+  {
+    "REGIONNAME": "上饶",
+    "REGIONCODE": "361100"
+  },
+  {
+    "REGIONNAME": "赣州",
+    "REGIONCODE": "360700"
+  },
+  {
+    "REGIONNAME": "九江",
+    "REGIONCODE": "360400"
+  },
+  {
+    "REGIONNAME": "萍乡",
+    "REGIONCODE": "360300"
+  },
+  {
+    "REGIONNAME": "南昌",
+    "REGIONCODE": "360100"
+  },
+  {
+    "REGIONNAME": "鹰潭",
+    "REGIONCODE": "360600"
+  },
+  {
+    "REGIONNAME": "抚顺",
+    "REGIONCODE": "210400"
+  },
+  {
+    "REGIONNAME": "营口",
+    "REGIONCODE": "210800"
+  },
+  {
+    "REGIONNAME": "锦州",
+    "REGIONCODE": "210700"
+  },
+  {
+    "REGIONNAME": "沈阳",
+    "REGIONCODE": "210100"
+  },
+  {
+    "REGIONNAME": "盘锦",
+    "REGIONCODE": "211100"
+  },
+  {
+    "REGIONNAME": "鞍山",
+    "REGIONCODE": "210300"
+  },
+  {
+    "REGIONNAME": "葫芦岛",
+    "REGIONCODE": "211400"
+  },
+  {
+    "REGIONNAME": "阜新",
+    "REGIONCODE": "210900"
+  },
+  {
+    "REGIONNAME": "辽阳",
+    "REGIONCODE": "211000"
+  },
+  {
+    "REGIONNAME": "朝阳",
+    "REGIONCODE": "211300"
+  },
+  {
+    "REGIONNAME": "大连",
+    "REGIONCODE": "210200"
+  },
+  {
+    "REGIONNAME": "本溪",
+    "REGIONCODE": "210500"
+  },
+  {
+    "REGIONNAME": "丹东",
+    "REGIONCODE": "210600"
+  },
+  {
+    "REGIONNAME": "铁岭",
+    "REGIONCODE": "211200"
+  },
+  {
+    "REGIONNAME": "天津市",
+    "REGIONCODE": "120100"
+  },
+  {
+    "REGIONNAME": "天津县",
+    "REGIONCODE": "120200"
+  },
+  {
+    "REGIONNAME": "甘南藏族",
+    "REGIONCODE": "623000"
+  },
+  {
+    "REGIONNAME": "兰州",
+    "REGIONCODE": "620100"
+  },
+  {
+    "REGIONNAME": "天水",
+    "REGIONCODE": "620500"
+  },
+  {
+    "REGIONNAME": "平凉",
+    "REGIONCODE": "620800"
+  },
+  {
+    "REGIONNAME": "嘉峪关",
+    "REGIONCODE": "620200"
+  },
+  {
+    "REGIONNAME": "武威",
+    "REGIONCODE": "620600"
+  },
+  {
+    "REGIONNAME": "临夏回族",
+    "REGIONCODE": "622900"
+  },
+  {
+    "REGIONNAME": "金昌",
+    "REGIONCODE": "620300"
+  },
+  {
+    "REGIONNAME": "张掖",
+    "REGIONCODE": "620700"
+  },
+  {
+    "REGIONNAME": "定西",
+    "REGIONCODE": "621100"
+  },
+  {
+    "REGIONNAME": "庆阳",
+    "REGIONCODE": "621000"
+  },
+  {
+    "REGIONNAME": "陇南",
+    "REGIONCODE": "621200"
+  },
+  {
+    "REGIONNAME": "酒泉",
+    "REGIONCODE": "620900"
+  },
+  {
+    "REGIONNAME": "白银",
+    "REGIONCODE": "620400"
+  },
+  {
+    "REGIONNAME": "平顶山",
+    "REGIONCODE": "410400"
+  },
+  {
+    "REGIONNAME": "驻马店",
+    "REGIONCODE": "411700"
+  },
+  {
+    "REGIONNAME": "新乡",
+    "REGIONCODE": "410700"
+  },
+  {
+    "REGIONNAME": "开封",
+    "REGIONCODE": "410200"
+  },
+  {
+    "REGIONNAME": "安阳",
+    "REGIONCODE": "410500"
+  },
+  {
+    "REGIONNAME": "南阳",
+    "REGIONCODE": "411300"
+  },
+  {
+    "REGIONNAME": "三门峡",
+    "REGIONCODE": "411200"
+  },
+  {
+    "REGIONNAME": "商丘",
+    "REGIONCODE": "411400"
+  },
+  {
+    "REGIONNAME": "周口",
+    "REGIONCODE": "411600"
+  },
+  {
+    "REGIONNAME": "洛阳",
+    "REGIONCODE": "410300"
+  },
+  {
+    "REGIONNAME": "郑州",
+    "REGIONCODE": "410100"
+  },
+  {
+    "REGIONNAME": "焦作",
+    "REGIONCODE": "410800"
+  },
+  {
+    "REGIONNAME": "鹤壁",
+    "REGIONCODE": "410600"
+  },
+  {
+    "REGIONNAME": "漯河",
+    "REGIONCODE": "411100"
+  },
+  {
+    "REGIONNAME": "濮阳",
+    "REGIONCODE": "410900"
+  },
+  {
+    "REGIONNAME": "许昌",
+    "REGIONCODE": "411000"
+  },
+  {
+    "REGIONNAME": "河南",
+    "REGIONCODE": "419000"
+  },
+  {
+    "REGIONNAME": "信阳",
+    "REGIONCODE": "411500"
+  },
+  {
+    "REGIONNAME": "昆山",
+    "REGIONCODE": "321500"
+  }
+]
